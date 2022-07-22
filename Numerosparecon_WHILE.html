@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<h1>NUMEROS PARES DEL 1 AL 100</h1>
+<script>
+
+  function saltarLinea() {
+
+        document.write("<br>");
+        document.write("<br>");
+        
+        
+    
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarLinea();
+    }
+
+    //Usando la instrucción while, imprime todos los números pares del 1 al 100 y al final imprime la palabra "FIN".
+
+    var numero = 0 // a partir del 0 
+    contador = 2 // SE VA AUMENTAR DOS PORQUE LOS NÚMEROS PARES AQUELLOS QUE SE SUMAN O MULTIPLICAN POR 2 
+
+    while(numero <= 100){ //UTILIZAMOS IGUAL O MENOR A 100 PORQUE ESE ES NUESTRO RANGO
+        
+        imprimir (numero = numero + 2 )
+        contador++;  // utilizamos el contador para asegurarnos de delimitar nuestro while en el rango de 100
+    }
+
+
+    imprimir ("fin");
+       
+
+</script>

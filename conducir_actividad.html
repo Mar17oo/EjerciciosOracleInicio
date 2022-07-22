@@ -1,0 +1,58 @@
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+    /* COMO LO RESOLVÍ
+    if (edad > 18)  {
+        imprimir(" Genial, tienes la edad para conducir")
+    }
+
+    if (edad < 18)  {
+        imprimir(" No puedes conducir")
+    }
+
+    if (tieneLicencia == "S") {
+        imprimir("¡Puedes conducir!")
+    }
+
+    if (tieneLicencia == "N") {
+        imprimir(" ¡Que triste! Sin licencia no puedes conducir ")
+    }
+    */
+
+
+    /*MAESTRO 1ST MEJORA
+      if((edad >= 18) && (tieneLicencia == "S")) {
+            imprimir("Puedes conducir");
+        }
+
+
+    if(edad < 18) {
+        imprimir("No puedes conducir");
+    }
+    */
+
+    // MAESTRO
+
+     if((edad >= 18) && (tieneLicencia == "S")) {
+            imprimir("Puedes conducir");
+        }
+
+    else {
+        imprimir("No puedes conducir");
+    }
+
+    
+   
+</script>

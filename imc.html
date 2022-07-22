@@ -1,0 +1,99 @@
+<meta charset="utf-8">
+
+<h1>PROGRAMA CALCULAR IMC</h1>
+
+<script>
+
+    function saltarlinea() {
+
+        document.write("<br>");
+        document.write("<br>"); 
+        document.write("<br>");  
+    }
+    function imprimir(frase){
+
+        document.write(frase);
+        saltarlinea();
+    }
+
+    function calcularImc(peso,altura) {
+
+         return (peso / (altura * altura));
+
+         //imprimir ("El imc calculado de " + nombre + " es " + Math.round(imc) );
+    
+    }
+
+    //var imcChristian = calcularImc(71,1.72);EJERCICI NUMERO 3
+    //var imcFelipe= calcularImc(71,1.73,);
+
+//INTERACCIÓN CON EL USUARIO 
+    nombre=prompt("Informe su nombre")
+    pesoInformado= prompt( nombre +" , informe su peso")
+    alturaInformado=prompt(nombre + " , informe su altura")
+    imcCalcualdo=calcularImc(pesoInformado,alturaInformado)
+
+    imprimir(nombre +", su imc calculado es:" + imcCalcualdo);
+
+  /*  saltarLinea() 
+    imprimir("SI QUIERES ADELGAZAR, COMUNICATE CON NUESTROS ASESORES...." + "<br>")
+    imprimir("Telefonos: "+ imcCalculado)*/
+
+
+
+    if (imcCalcualdo < 18.5) {
+        imprimir ("IMC abajo de lo recomendado"); 
+    }
+
+    if (imcCalcualdo >= 18.5) {
+        if (imcCalcualdo < 25){
+        imprimir ("IMC esta dentro del intervalo normal");
+        }
+    }
+
+    if (imcCalcualdo >= 25) {
+
+        if (imcCalcualdo < 30){
+        imprimir ("IMC considerado como sobrepeso");
+        }
+    }
+
+    if (imcCalcualdo >= 30) {
+        Imprimir ("IMC considerado como obesidad");
+    }
+
+
+
+
+
+
+
+
+
+
+    //imprimir("EL promedio del imc calculado de Christian y Felipe es:" + ( calcularImc(71,1.72) +
+        //calcularImc(71,1.73)) /2);
+
+// imprimir("EL promedio del imc calculado de Gabriela y Luisa es:" + ( calcularImc(65,1.55) +
+        //calcularImc(71,1.60)) /2);
+
+
+
+
+
+
+
+
+    //pesoChristian = 71
+    //alturaChristian = 1.72
+    //imcChristian= pesoChristian / (alturaChristian * alturaChristian)
+    //imcChristian = calcularImc(pesoChristian, alturaChristian)
+    //imprimir("El IMC de Christian es " + imcChristian)
+ 
+    //pesoMar = 50
+    //alturaMar = 1.55
+    //imcMar= calcularImc(pesoMar,alturaMar)
+
+    //imprimir("El IMC de Mar es " + imcMar)
+</script>
+
